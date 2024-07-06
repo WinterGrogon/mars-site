@@ -1,0 +1,36 @@
+// screen size
+$screen-width-max: 1920;
+$screen-width-min: 280;
+
+// grid size
+$container-width: 1230px;
+$grid-gap: 30px;
+
+// colors
+$white: #FFFFFF;
+$black: #000000;
+$orange: #FFB762;
+$dark-blue: #222735;
+$blue: #3E4761;
+$gradi-blue: #2b344b;
+
+$text-color: $white;
+$text-second-color: $black;
+$button-background-color: $blue;
+$sidenav-background-color: $blue;
+
+// fonts
+$font-main: 'Gputeks', sans-serif;
+
+// font sizes
+$font-size-base: 30px;
+$font-size-main: 1rem;
+$font-size-small: 0.5rem;
+$font-size-medium: 2rem;
+$font-size-big: 6rem;
+
+// font sizes mobile
+$font-size-main-mobile: 0.78rem;
+$font-size-small-mobile: 0.4rem;
+$font-size-medium-mobile: 0.9rem;
+$font-size-big-mobile: 3rem;

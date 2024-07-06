@@ -1,0 +1,45 @@
+body {
+    font-family: $font-main;
+    font-size: $font-size-base;
+    color: $text-color;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+
+    padding: 80px 11% 80px 70px;
+    
+    @media screen and (max-width: 1300px) {
+        padding: 80px 15% 80px 70px;
+    }
+
+    @media screen and (min-width: 1921px) {
+        padding: 80px 180px 80px 70px;
+    }
+    
+    @media screen and (max-width: 870px) {
+        padding: 20px 80px 40px 20px;
+    }
+}
+
+h1 {
+    $pc-font-size: $font-size-big;
+    $mobile-font-size: $font-size-big-mobile;
+
+    font-size: adaptive-font-size($pc-font-size, $mobile-font-size);
+}
+
+h2 {
+    $pc-font-size: $font-size-medium;
+    $mobile-font-size: $font-size-medium-mobile;
+
+    font-size: adaptive-font-size($pc-font-size, $mobile-font-size);
+}
+
+p, a, label, input, input::placeholder, button {
+    $pc-font-size: $font-size-main;
+    $mobile-font-size: $font-size-main-mobile;
+
+    font-size: adaptive-font-size($pc-font-size, $mobile-font-size);
+}

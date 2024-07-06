@@ -1,0 +1,21 @@
+.alien {
+    width: 155 / 646 * 100%;
+    aspect-ratio: 155 / 197;
+
+    position: relative;
+
+    &__body {
+        height: 100%;
+        width: 100%;
+    }
+
+    &__eye {
+        width: 15 / 155 * 100%;
+        aspect-ratio: 1;
+
+        position: absolute;
+        top: 69 / 197 * 100%;
+        left: 68 / 155 * 100%;
+        z-index: 2;
+    }
+}

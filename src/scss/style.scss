@@ -1,0 +1,21 @@
+// Variables
+@import "./base/vars";
+
+// Utils
+@import "./utils/mixins";
+@import "./utils/functions";
+
+// Base
+@import "./base/reset";
+@import "./base/fonts";
+@import "./base/base";
+
+// Components
+@import "./components/alien";
+
+// Sections
+@import "./sections/header";
+@import "./sections/about";
+@import "./sections/how-people";
+
+

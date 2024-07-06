@@ -1,0 +1,5 @@
+@font-face {
+    font-family: 'Gputeks';
+    src: url("./Gputeks-Regular.woff2") format("woff2"), url("./Gputeks-Regular.woff") format("woff");
+    font-display: swap;
+}

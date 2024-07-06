@@ -1,0 +1,71 @@
+.how-people {
+    @include section-position;
+
+    width: 100%;
+    height: 100dvh;
+
+    overflow: hidden;
+    background: linear-gradient(360deg, $dark-blue, $gradi-blue 100%);
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 70 / 1080 * 100%;
+    }
+
+    &__info {
+        display: flex;
+    }
+
+    &__text {
+        width: 40%;
+        line-height: min(30px, 50 / 1080 * 100dvh);
+    }
+
+    &__rovers {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: repeat(4, 1fr);
+
+        width: 60%;
+    }
+
+    &__rover-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__rover-image {
+        // width: 100%;
+        // max-width: 5.26vw;
+        // min-width: 50px;
+
+        width: clamp(50px, 100%, 5.26vw);
+    }
+
+    &__rover-text {
+        font-size: $font-size-small;
+    }
+
+    &__background {
+        background: url("../img/section-3-bg.svg") bottom / 100% no-repeat;
+    }
+
+    &__rover {
+        width: 474 / 1920 * 100%;
+    
+        position: absolute;
+        left: 692 / 1920 * 100%;
+        bottom: 96 / 1080 * 100%;
+    }
+    
+    &__alien {
+        width: 418 / 1920 * 100%;
+    
+        position: absolute;
+        left: -50 / 1080 * 100%;
+        bottom: 96 / 1080 * 100%;
+    }
+}

@@ -1,0 +1,63 @@
+.about {
+    @include section-position;
+
+    width: 100%;
+    height: 100dvh;
+    background: linear-gradient(0.00deg, $gradi-blue, $dark-blue 100%);
+    
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__picture {
+        margin: 0 auto;
+        
+        max-width: 50%;
+        max-height: 100%;
+        aspect-ratio: 646 / 871;
+        
+        position: relative;
+    }
+    
+    &__planets {
+        height: 100%;
+        
+        position: relative;
+        z-index: 3;
+    }
+    
+    &__article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 70 / 1080 * 100%;
+        
+        height: 100%;
+        width: 50%;
+    }
+    
+    .alien {
+        position: absolute;
+        top: 275 / 871 * 100%;
+        left: 190 / 646 * 100%;
+    }
+
+    @media screen and (orientation: portrait) {   
+        &__picture {
+            max-width: 100%;
+        }
+
+        &__article {
+            @include background-frame;
+
+            gap: 20px;
+
+            height: fit-content;
+            width: 100%;
+
+            position: absolute;
+            z-index: 3;
+        }
+    }
+}

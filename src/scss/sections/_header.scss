@@ -1,0 +1,48 @@
+.header {
+    @include section-position;
+    
+    height: 100dvh;
+    width: 100%;
+    overflow: hidden;
+    
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__button {
+        width: fit-content;
+        padding: 30px 60px;
+        background-color: $button-background-color;
+        text-align: center;
+        user-select: none;
+    }
+
+    &__background {
+        background-color: $dark-blue;
+    }
+    
+    &__flight {
+        width: 1582 / 1920 * 100%;
+
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transform: translateX(530 / 1582 * 100%) translateY(828 / 1515 * 100%);
+    }
+
+    &__planet {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__raketa {
+        width: 248 / 1582 * 100%;
+
+        position: absolute;
+        right: 70%;
+        bottom: 75%;
+        rotate: -38.2deg;
+    }
+}
