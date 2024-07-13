@@ -51,6 +51,7 @@
 
     &__background {
         background: url("../img/section-3-bg.svg") bottom / 100% no-repeat;
+        transform: translateY(1px);
     }
 
     &__rover {

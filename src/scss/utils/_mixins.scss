@@ -75,3 +75,46 @@
         right: 0;
     }
 }
+
+@mixin satellite-settings($name, $satellite-height, $satellite-width, $orbit-height, $left-position, $bottom-position) {
+    // стили для флексбокс обеспечивающие вертикальные выравнивания и промежутки
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: min(5px, 20 / 1080 * 100dvh);
+
+    // установка высоты спутника на основе высоты орбиты
+    height: $satellite-height / $orbit-height * 100%;
+
+    // позиционирование спутника
+    position: absolute;
+    left: $left-position / $orbit-height * 100%;
+    bottom: $bottom-position / $orbit-height * 100%;
+
+    // стили для изображения спутника
+    &-image {
+        height: 100%;
+        width: 100%;
+    }
+
+    // метка отображаемая после спутника
+    &::after {
+        content: $name;
+
+        // позиционирование метки
+        position: absolute;
+        top: 100%;
+
+        // стили для текста метки
+        color: $text-second-color;
+
+        // адаптивный размер шрифта
+        font-size: adaptive-font-size($pc-font-size: $font-size-main, $mobile-font-size: $font-size-main-mobile);
+        letter-spacing: 15.6px;
+
+        // скрытие метки на маленьких экранах
+        @media screen and ((max-width: 764px) or (max-height: 764px)) {
+            opacity: 0;
+        }
+    }
+}

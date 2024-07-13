@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Reset and base styles  */
 @import "../fonts/Gputeks/stylesheets.css";
 * {
@@ -387,6 +388,8 @@ p, a, label, input, input::placeholder, button {
 }
 .how-people__background {
   background: url("../img/section-3-bg.svg") bottom/100% no-repeat;
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
 }
 .how-people__rover {
   width: 24.6875%;
@@ -399,4 +402,143 @@ p, a, label, input, input::placeholder, button {
   position: absolute;
   left: -4.6296296296%;
   bottom: 8.8888888889%;
+}
+
+.additions {
+  position: relative;
+  background-color: #FFB762;
+  width: 100%;
+  height: 100dvh;
+  overflow: hidden;
+}
+.additions__content {
+  position: relative;
+  z-index: 2;
+}
+.additions__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.additions__content, .additions__background {
+  width: 100%;
+  height: 100%;
+}
+.additions__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 9.2592592593dvh;
+  color: #000000;
+}
+@media screen and (orientation: portrait) {
+  .additions__content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.additions__orbit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 9.0740740741dvh;
+  border: min(5px, 0.2604166667dvw) solid white;
+  border-radius: 50%;
+  position: relative;
+}
+@media screen and (orientation: portrait) {
+  .additions__orbit {
+    padding: 12.7604166667dvw;
+  }
+}
+.additions__mars {
+  height: 37.037037037dvh;
+}
+@media screen and (orientation: portrait) {
+  .additions__mars {
+    height: auto;
+    width: 45dvw;
+  }
+}
+.additions__phobos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: min(5px, 1.8518518519dvh);
+  height: 19.0763052209%;
+  position: absolute;
+  left: -7.6305220884%;
+  bottom: 34.5381526104%;
+}
+.additions__phobos-image {
+  height: 100%;
+  width: 100%;
+}
+.additions__phobos::after {
+  content: "Фобос";
+  position: absolute;
+  top: 100%;
+  color: #000000;
+  font-size: calc(0.78rem + 6.6 * (100dvw - 280px) / (1920 - 280));
+  letter-spacing: 15.6px;
+}
+@media screen and ((max-width: 764px) or (max-height: 764px)) {
+  .additions__phobos::after {
+    opacity: 0;
+  }
+}
+.additions__deimos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: min(5px, 1.8518518519dvh);
+  height: 12.0481927711%;
+  position: absolute;
+  left: 25.1004016064%;
+  bottom: -1.0040160643%;
+}
+.additions__deimos-image {
+  height: 100%;
+  width: 100%;
+}
+.additions__deimos::after {
+  content: "Деймос";
+  position: absolute;
+  top: 100%;
+  color: #000000;
+  font-size: calc(0.78rem + 6.6 * (100dvw - 280px) / (1920 - 280));
+  letter-spacing: 15.6px;
+}
+@media screen and ((max-width: 764px) or (max-height: 764px)) {
+  .additions__deimos::after {
+    opacity: 0;
+  }
 }
