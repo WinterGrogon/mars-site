@@ -17,3 +17,18 @@
         rotate: -38.2deg;
     }
 }
+
+// абаут планет
+@keyframes alien-eye-motion {
+    0% {
+        transform: translateX(-12 / 15 * 100%) rotate(-90deg);
+    }
+    100% {
+        transform: translateX(11 / 15 * 100%);
+    }
+}
+@keyframes alien-motion {
+    100% {
+        transform: translateY(50%);
+    }
+}

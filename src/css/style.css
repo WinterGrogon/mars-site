@@ -181,10 +181,44 @@ p, a, label, input, input::placeholder, button {
     rotate: -38.2deg;
   }
 }
+@-webkit-keyframes alien-eye-motion {
+  0% {
+    -webkit-transform: translateX(-80%) rotate(-90deg);
+            transform: translateX(-80%) rotate(-90deg);
+  }
+  100% {
+    -webkit-transform: translateX(73.3333333333%);
+            transform: translateX(73.3333333333%);
+  }
+}
+@keyframes alien-eye-motion {
+  0% {
+    -webkit-transform: translateX(-80%) rotate(-90deg);
+            transform: translateX(-80%) rotate(-90deg);
+  }
+  100% {
+    -webkit-transform: translateX(73.3333333333%);
+            transform: translateX(73.3333333333%);
+  }
+}
+@-webkit-keyframes alien-motion {
+  100% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+}
+@keyframes alien-motion {
+  100% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+}
 .alien {
   width: 23.9938080495%;
   aspect-ratio: 155/197;
   position: relative;
+  -webkit-animation: alien-motion 5s linear infinite alternate both;
+          animation: alien-motion 5s linear infinite alternate both;
 }
 .alien__body {
   height: 100%;
@@ -197,6 +231,8 @@ p, a, label, input, input::placeholder, button {
   top: 35.0253807107%;
   left: 43.8709677419%;
   z-index: 2;
+  -webkit-animation: alien-eye-motion 1s linear infinite alternate both;
+          animation: alien-eye-motion 1s linear infinite alternate both;
 }
 
 .header {
