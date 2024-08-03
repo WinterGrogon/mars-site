@@ -213,6 +213,100 @@ p, a, label, input, input::placeholder, button {
             transform: translateY(50%);
   }
 }
+@-webkit-keyframes how-people-alien-motion {
+  0% {
+    left: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  32.5% {
+    left: 20%;
+    -webkit-transform: translateX(-17%);
+            transform: translateX(-17%);
+  }
+  50%, 100% {
+    left: 100%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+@keyframes how-people-alien-motion {
+  0% {
+    left: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  32.5% {
+    left: 20%;
+    -webkit-transform: translateX(-17%);
+            transform: translateX(-17%);
+  }
+  50%, 100% {
+    left: 100%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+@-webkit-keyframes how-people-rover-motion {
+  0% {
+    left: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  17% {
+    left: 70%;
+    -webkit-transform: translateX(-50%) rotateY(0deg);
+            transform: translateX(-50%) rotateY(0deg);
+  }
+  18% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  34%, 48% {
+    left: 50%;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  49% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  60%, 100% {
+    left: 100%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+@keyframes how-people-rover-motion {
+  0% {
+    left: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  17% {
+    left: 70%;
+    -webkit-transform: translateX(-50%) rotateY(0deg);
+            transform: translateX(-50%) rotateY(0deg);
+  }
+  18% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  34%, 48% {
+    left: 50%;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  49% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  60%, 100% {
+    left: 100%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
 .alien {
   width: 23.9938080495%;
   aspect-ratio: 155/197;
@@ -469,12 +563,16 @@ p, a, label, input, input::placeholder, button {
   position: absolute;
   left: 36.0416666667%;
   bottom: 8.8888888889%;
+  -webkit-animation: how-people-rover-motion 10s linear infinite both;
+          animation: how-people-rover-motion 10s linear infinite both;
 }
 .how-people__alien {
   width: 21.7708333333%;
   position: absolute;
   left: -4.6296296296%;
   bottom: 8.8888888889%;
+  -webkit-animation: how-people-alien-motion 10s linear infinite 2s both;
+          animation: how-people-alien-motion 10s linear infinite 2s both;
 }
 
 .additions {

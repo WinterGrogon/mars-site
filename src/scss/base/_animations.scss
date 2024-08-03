@@ -32,3 +32,43 @@
         transform: translateY(50%);
     }
 }
+
+// хау пипл
+@keyframes how-people-alien-motion {
+    0% {
+        left: 0;
+        transform: translateX(-100%);
+    }
+    32.5% {
+        left: 20%;
+        transform: translateX(-17%);
+    }
+    50%, 100% {
+        left: 100%;
+        transform: translateX(100%);
+    }
+}
+@keyframes how-people-rover-motion {
+    0% {
+        left: 0;
+        transform: translateX(-100%);
+    }
+    17% {
+        left: 70%; 
+        transform: translateX(-50%) rotateY(0deg);
+    }
+    18% {
+        transform: rotateY(180deg);
+    }
+    34%, 48% {
+        left: 50%;
+        transform: rotateY(180deg);
+    }
+    49% {
+        transform: rotateY(0deg);
+    }
+    60%, 100% {
+        left: 100%;
+        transform: translateX(100%);
+    }
+}

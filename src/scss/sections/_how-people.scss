@@ -60,6 +60,7 @@
         position: absolute;
         left: 692 / 1920 * 100%;
         bottom: 96 / 1080 * 100%;
+        animation: how-people-rover-motion 10s linear infinite both;
     }
     
     &__alien {
@@ -68,5 +69,6 @@
         position: absolute;
         left: -50 / 1080 * 100%;
         bottom: 96 / 1080 * 100%;
+        animation: how-people-alien-motion 10s linear infinite 2s both;
     }
 }
