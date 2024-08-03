@@ -146,6 +146,41 @@ p, a, label, input, input::placeholder, button {
   font-size: calc(0.78rem + 6.6 * (100dvw - 280px) / (1920 - 280));
 }
 
+@-webkit-keyframes header-rocket-fly {
+  0% {
+    bottom: 0;
+    right: 110%;
+    rotate: 38.2deg;
+  }
+  40% {
+    right: 90%;
+    bottom: 100%;
+    rotate: 0;
+  }
+  100% {
+    right: 70%;
+    bottom: 75%;
+    rotate: -38.2deg;
+  }
+}
+
+@keyframes header-rocket-fly {
+  0% {
+    bottom: 0;
+    right: 110%;
+    rotate: 38.2deg;
+  }
+  40% {
+    right: 90%;
+    bottom: 100%;
+    rotate: 0;
+  }
+  100% {
+    right: 70%;
+    bottom: 75%;
+    rotate: -38.2deg;
+  }
+}
 .alien {
   width: 23.9938080495%;
   aspect-ratio: 155/197;
@@ -228,6 +263,8 @@ p, a, label, input, input::placeholder, button {
   right: 70%;
   bottom: 75%;
   rotate: -38.2deg;
+  -webkit-animation: header-rocket-fly 5s linear 1s both;
+          animation: header-rocket-fly 5s linear 1s both;
 }
 
 .about {

@@ -1,0 +1,19 @@
+// Хедер
+@keyframes header-rocket-fly {
+    0% {
+        bottom: 0;
+        right: 110%;
+        rotate: 38.2deg;
+    }
+
+    40% {
+        right: 90%;
+        bottom: 100%;
+        rotate: 0;
+    }
+    100% {
+        right: 70%;
+        bottom: 75%;
+        rotate: -38.2deg;
+    }
+}
