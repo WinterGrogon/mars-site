@@ -72,3 +72,42 @@
         transform: translateX(100%);
     }
 }
+
+// additions
+@keyframes vrashenie {
+    100% {
+        rotate: 360deg;
+    }
+}
+
+// earth
+@keyframes karablek {
+    0% {
+        bottom: 100 / 1080 * 100dvh;
+    }
+
+    37.5% {
+        transform: rotate(0);
+    }
+
+    40% {
+        transform: rotate(180deg);
+    }
+
+    45%, 50% {
+        bottom: 750 / 1080 * 100dvh;
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(180deg);
+    }
+
+    80% {
+        transform: rotate(0);
+    }
+
+    90%, 100% {
+        bottom: 100 / 1080 * 100dvh;
+    }
+}

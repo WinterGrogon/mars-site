@@ -36,8 +36,11 @@
 
     &__rocket-image {
         width: 130 / 1920 * 100dvw;
+
         position: absolute;
         right: 22%;
         bottom: 415 / 1080 * 100dvh;
+
+        animation: karablek 8s linear infinite both;
     }
 }

@@ -36,8 +36,11 @@
 
         position: relative;
 
+        animation: vrashenie 10s linear infinite;
+
         @media screen and (orientation: portrait) {
             padding: $orbit-padding-portrait / 1920 * 100dvw;
+            
         }
     }
 

@@ -91,6 +91,9 @@
     left: $left-position / $orbit-height * 100%;
     bottom: $bottom-position / $orbit-height * 100%;
 
+    // анимация
+    animation: vrashenie 10s linear infinite reverse;
+
     // стили для изображения спутника
     &-image {
         height: 100%;

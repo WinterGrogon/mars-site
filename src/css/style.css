@@ -307,6 +307,74 @@ p, a, label, input, input::placeholder, button {
             transform: translateX(100%);
   }
 }
+@-webkit-keyframes vrashenie {
+  100% {
+    rotate: 360deg;
+  }
+}
+@keyframes vrashenie {
+  100% {
+    rotate: 360deg;
+  }
+}
+@-webkit-keyframes karablek {
+  0% {
+    bottom: 9.2592592593dvh;
+  }
+  37.5% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  40% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  45%, 50% {
+    bottom: 69.4444444444dvh;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  80% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  90%, 100% {
+    bottom: 9.2592592593dvh;
+  }
+}
+@keyframes karablek {
+  0% {
+    bottom: 9.2592592593dvh;
+  }
+  37.5% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  40% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  45%, 50% {
+    bottom: 69.4444444444dvh;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  80% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  90%, 100% {
+    bottom: 9.2592592593dvh;
+  }
+}
 .alien {
   width: 23.9938080495%;
   aspect-ratio: 155/197;
@@ -630,6 +698,8 @@ p, a, label, input, input::placeholder, button {
   border: min(5px, 0.2604166667dvw) solid white;
   border-radius: 50%;
   position: relative;
+  -webkit-animation: vrashenie 10s linear infinite;
+          animation: vrashenie 10s linear infinite;
 }
 @media screen and (orientation: portrait) {
   .additions__orbit {
@@ -661,6 +731,7 @@ p, a, label, input, input::placeholder, button {
   position: absolute;
   left: -7.6305220884%;
   bottom: 34.5381526104%;
+  animation: vrashenie 10s linear infinite reverse;
 }
 .additions__phobos-image {
   height: 100%;
@@ -695,6 +766,7 @@ p, a, label, input, input::placeholder, button {
   position: absolute;
   left: 25.1004016064%;
   bottom: -1.0040160643%;
+  animation: vrashenie 10s linear infinite reverse;
 }
 .additions__deimos-image {
   height: 100%;
@@ -775,4 +847,6 @@ p, a, label, input, input::placeholder, button {
   position: absolute;
   right: 22%;
   bottom: 38.4259259259dvh;
+  -webkit-animation: karablek 8s linear infinite both;
+          animation: karablek 8s linear infinite both;
 }
