@@ -850,3 +850,22 @@ p, a, label, input, input::placeholder, button {
   -webkit-animation: karablek 8s linear infinite both;
           animation: karablek 8s linear infinite both;
 }
+
+.footer {
+  background-color: #FFB762;
+  color: #000000;
+  font-weight: 500;
+  letter-spacing: 0.5rem;
+  min-height: 30dvh;
+}
+.footer, .footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}

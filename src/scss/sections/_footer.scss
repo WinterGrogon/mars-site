@@ -1,0 +1,15 @@
+.footer {
+    background-color: $orange;
+    color: $text-second-color;
+
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+
+    min-height: 30dvh;
+
+    &, .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
