@@ -34,3 +34,8 @@ $font-size-main-mobile: 0.78rem;
 $font-size-small-mobile: 0.4rem;
 $font-size-medium-mobile: 0.9rem;
 $font-size-big-mobile: 3rem;
+
+// sidenav
+$sidenav-width: clamp(200px, 430 / 1920 * 100%, 430px);
+$sidenav-height: clamp(330px, 70dvh, 920px);
+$sidenav-left-width: calc(140 / 430 * 100%);

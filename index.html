@@ -9,6 +9,24 @@
 </head>
 
 <body>
+    <nav class="sidenav">
+        <section class="sidenav__left">
+            <a href="#" class="sidenav__logo">
+                <img src="/src/img/logo.svg" alt="логово фуфелшмертца (марс)" class="sidenav__logo-image">
+            </a>
+            <p class="sidenav__text">Навигация</p>
+        </section>
+        <section class="sidenav__right">
+            <ul class="sidenav__items">
+                <li class="sidenav__item"><a href="#about" class="sidenav__item-link">О Плаекте</a></li>
+                <li class="sidenav__item"><a href="#how-people" class="sidenav__item-link">Об изучении</a></li>
+                <li class="sidenav__item"><a href="#additions" class="sidenav__item-link">О Спрутинках</a></li>
+                <li class="sidenav__item"><a href="#earth" class="sidenav__item-link">О Канализации</a></li>
+                <li class="sidenav__item"><a href="/src/html/register.html" class="sidenav__item-link">Регустрация</a></li>
+            </ul>
+        </section>
+    </nav>
+
     <header class="header">
         <div class="container">
             <section class="header__content">
@@ -26,7 +44,7 @@
     </header>
 
     <main class="main">
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <div class="about__content">
                     <section class="about__picture">
@@ -49,7 +67,7 @@
             </div>
         </section>
 
-        <section class="how-people">
+        <section class="how-people" id="how-people">
             <div class="container">
                 <section class="how-people__content">
                     <h2 class="how-people__title">Как люди покоряют Марс</h2>
@@ -87,7 +105,7 @@
             </section>
         </section>
 
-        <section class="additions">
+        <section class="additions" id="additions">
             <div class="container">
                 <div class="additions__content">
                     <h2 class="additions__title">А ещё у Марса есть спутники</h2>
@@ -103,11 +121,12 @@
                 </div>
             </div>
         </section>
-        <section class="earth">
+
+        <section class="earth" id="earth">
             <div class="container">
                 <div class="earth__content">
                     <h2 class="earth__title">Возможно, однажды Марс станет второй планетой, приютившей человечество</h2>
-                    <a href="#!" class="earth__button">Запишись в ряды имперских штурмовиков</a>
+                    <a href="src/html/register.html" class="earth__button">Запишись в ряды имперских штурмовиков</a>
                 </div>
             </div>
             <div class="earth__background">

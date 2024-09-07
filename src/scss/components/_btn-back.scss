@@ -1,0 +1,23 @@
+.btn-back {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    z-index: 1000;
+    user-select: none;
+    transition: scale .3s ease-in-out;
+
+    &:hover {
+        scale: 1.1;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 236 / 1920 * 100dvw;
+        aspect-ratio: 236 / 102;
+        min-width: 60px;
+        background-color: $button-background-color;
+    }
+}
