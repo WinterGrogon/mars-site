@@ -111,3 +111,15 @@
         bottom: 100 / 1080 * 100dvh;
     }
 }
+
+@keyframes move-up {
+    28%, 33% {
+        transform: translateY(calc(-100% - 20px));
+    }
+    62%, 67% {
+        transform: translateY(calc(-200% - 20px));
+    }
+    95%, 100% {
+        transform: translateY(calc(-300% - 20px));
+    }
+}

@@ -117,6 +117,9 @@ body {
     padding: 20px 80px 40px 20px;
   }
 }
+.container--second-page {
+  padding-inline: 15.625%;
+}
 
 h1 {
   font-size: calc(3rem + 90 * (100dvw - 280px) / (1920 - 280));
@@ -373,6 +376,34 @@ p, a, label, input, input::placeholder, button {
   }
   90%, 100% {
     bottom: 9.2592592593dvh;
+  }
+}
+@-webkit-keyframes move-up {
+  28%, 33% {
+    -webkit-transform: translateY(calc(-100% - 20px));
+            transform: translateY(calc(-100% - 20px));
+  }
+  62%, 67% {
+    -webkit-transform: translateY(calc(-200% - 20px));
+            transform: translateY(calc(-200% - 20px));
+  }
+  95%, 100% {
+    -webkit-transform: translateY(calc(-300% - 20px));
+            transform: translateY(calc(-300% - 20px));
+  }
+}
+@keyframes move-up {
+  28%, 33% {
+    -webkit-transform: translateY(calc(-100% - 20px));
+            transform: translateY(calc(-100% - 20px));
+  }
+  62%, 67% {
+    -webkit-transform: translateY(calc(-200% - 20px));
+            transform: translateY(calc(-200% - 20px));
+  }
+  95%, 100% {
+    -webkit-transform: translateY(calc(-300% - 20px));
+            transform: translateY(calc(-300% - 20px));
   }
 }
 .alien {
@@ -988,4 +1019,99 @@ p, a, label, input, input::placeholder, button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.professions {
+  width: 100%;
+  height: 100dvh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#222836), to(#293146));
+  background: linear-gradient(180deg, #222836 0%, #293146 100%);
+}
+.professions .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: clamp(30px, 11.5740740741%, 125px);
+}
+.professions__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 670px) {
+  .professions__title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+}
+.professions__types {
+  height: calc(0.9rem + 33 * (100dvw - 280px) / (1920 - 280));
+  color: #FFB762;
+  overflow: hidden;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+.professions__type {
+  font-size: calc(0.9rem + 33 * (100dvw - 280px) / (1920 - 280));
+  line-height: calc(0.9rem + 33 * (100dvw - 280px) / (1920 - 280));
+  text-align: right;
+  -webkit-animation: move-up 4s linear 0s infinite both;
+          animation: move-up 4s linear 0s infinite both;
+  padding-block: 10px;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+@media screen and (max-width: 670px) {
+  .professions__type {
+    text-align: center;
+  }
+}
+.professions__cards {
+  width: 100%;
+}
+.professions__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  scale: 0.9;
+  aspect-ratio: 340/456;
+  background-color: #3E4761;
+  padding: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 2px solid transparent;
+  -webkit-transition: scale 1s ease-out, border-color 1.5s ease-in-out, height 0.5s ease-in-out;
+  transition: scale 1s ease-out, border-color 1.5s ease-in-out, height 0.5s ease-in-out;
+}
+.professions__card.swiper-slide-next {
+  scale: 1;
+  border-color: white;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }

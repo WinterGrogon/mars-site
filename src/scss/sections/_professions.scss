@@ -1,0 +1,74 @@
+.professions {
+    width: 100%;
+    height: 100dvh;
+    background: linear-gradient(180deg, #222836 0%, #293146 100%);
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(30px, 125 / 1080 * 100%, 125px);
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width: 670px) {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    &__types {
+        height: adaptive-font-size($font-size-medium, $font-size-medium-mobile);
+        color: $accent-color;
+        overflow: hidden;
+        flex: 0 0 auto;
+    }
+
+    &__type {
+        font-size: adaptive-font-size($font-size-medium, $font-size-medium-mobile);
+        line-height: adaptive-font-size($font-size-medium, $font-size-medium-mobile);
+        
+        text-align: right;
+        animation: move-up 4s linear 0s infinite both;
+        padding-block: 10px;
+        transform: translateY(-20px);
+
+        @media screen and (max-width: 670px) {
+            text-align: center;
+        }
+    }
+
+
+    &__cards {
+        width: 100%;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        scale: 0.9;
+        aspect-ratio: 340 / 456;
+
+        background-color: $button-background-color;
+        padding: 20px;
+        user-select: none;
+        border: 2px solid transparent;
+
+        transition: scale 1s ease-out,
+            border-color 1.5s ease-in-out,
+            height 0.5s ease-in-out;
+        
+        
+        &.swiper-slide-next {
+            scale: 1;
+            border-color: white;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+        }
+    }
+}

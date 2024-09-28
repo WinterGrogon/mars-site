@@ -21,6 +21,10 @@ body {
     @media screen and (max-width: 870px) {
         padding: 20px 80px 40px 20px;
     }
+
+    &--second-page {
+        padding-inline: 300 / 1920 * 100%;
+    }
 }
 
 h1 {

@@ -1,15 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ТЫ НЕ ИМПЕРСКИЙ ШТУРМОВИК? ПОРА ИСПРАВИТЬ!</title>
+    <title>ВЫ НЕ ИМПЕРСКИЙ ШТУРМОВИК? ПОРА ИСПРАВИТЬ!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/style.min.css">
 </head>
+
 <body>
     <nav class="btn-back">
         <a href="../../index.html" class="btn-back__link">Назад</a>
     </nav>
-    
+
+    <header class="professions">
+        <div class="container container--second-page">
+            <div class="professions__title">
+                <h2 class="professions__title-text">Присоединяйся к Империи:</h2>
+                <ul class="professions__types">
+                    <li class="professions__type">Инженер</li>
+                    <li class="professions__type">Колонист</li>
+                    <li class="professions__type">Терраформист</li>
+                    <li class="professions__type">Инженер</li>
+                </ul>
+            </div>
+            <!-- Slider main container -->
+            <div class="professions__cards swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="professions__card swiper-slide">
+                        <img src="../img/card-icon-1.svg" alt="ИНЖЕНЕР" class="professions__image">
+                        <p class="professions__name">Инженер</p>
+                        <details class="professions__details">
+                            <summary class="professions__summary">Подробнее...</summary>
+                            <p class="professions__text">Вам предстоит проектировать и анализировать всю инфраструктуру
+                                покорения марса. Участвовать в создании космических аппаратов и просчете математических
+                                закономерностей.</p>
+                        </details>
+                    </div>
+                    <div class="professions__card swiper-slide">
+                        <img src="../img/card-icon-2.svg" alt="КОЛОНИСТ" class="professions__image">
+                        <p class="professions__name">Колонист</p>
+                        <details class="professions__details">
+                            <summary class="professions__summary">Подробнее...</summary>
+                            <p class="professions__text">Колонист - человек, который колонизирует Марс. Вы первые
+                                ступите на марс. Вы первые
+                                столкнетесь с
+                                препятствиями на пути к заселению. Вы первопроходцы!
+                                Спектр ваших обязанностей включает в себя все, что потребуется для заселения марса,
+                                начиная от
+                                черновых работ и заканчивая мед помощью и сельским хозяйством.</p>
+                        </details>
+                    </div>
+                    <div class="professions__card swiper-slide">
+                        <img src="../img/card-icon-3.svg" alt="ТЕРРОРИСТ" class="professions__image">
+                        <p class="professions__name">Терраформист</p>
+                        <details class="professions__details">
+                            <summary class="professions__summary">Подробнее...</summary>
+                            <p class="professions__text">Терраформирование - это процесс изменения окружающей среды
+                                планеты, под нужды человека.
+                                Вы
+                                архитекторы и творцы целой планеты.
+                                Вам предстоит перестроить Марс на Гео уровне и превратить его из пустыни в райский
+                                уголок, такой же
+                                как Земля.****</p>
+                        </details>
+                    </div>
+                    <div class="professions__card swiper-slide">
+                        <img src="../img/card-icon-2.svg" alt="ИССЛЕДОВАТЕЛЬ" class="professions__image">
+                        <p class="professions__name">Исследователь</p>
+                        <details class="professions__details">
+                            <summary class="professions__summary">Подробнее...</summary>
+                            <p class="professions__text">Вам придется работать с передовыми научными инструментами,
+                                чтобы проанализировать состав
+                                атмосферы,
+                                изучить геологические образования и пролить свет на историю Красной планеты. Вы станете
+                                мостом
+                                между загадками Марса и стремлением человечества освоить новый мир.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
 </body>
+
 </html>
