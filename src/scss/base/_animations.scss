@@ -123,3 +123,16 @@
         transform: translateY(calc(-300% - 20px));
     }
 }
+
+// professions
+@keyframes sweep {
+    0% {
+        opacity: 0;
+        top: 100%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}

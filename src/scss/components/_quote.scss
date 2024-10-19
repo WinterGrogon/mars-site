@@ -1,0 +1,14 @@
+.quote {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(20px, 50 / 1080 * 100dvh, 50px);
+
+    &:nth-child(2n) &__text {
+        color: #FFDEB7;
+    }
+
+    &__author {
+        text-align: right;
+        color: #FD9B40;
+    }
+}

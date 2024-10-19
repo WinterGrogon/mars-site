@@ -1,6 +1,6 @@
 .professions {
     width: 100%;
-    height: 100dvh;
+    min-height: 100dvh;
     background: linear-gradient(180deg, #222836 0%, #293146 100%);
 
     .container {
@@ -60,15 +60,46 @@
         user-select: none;
         border: 2px solid transparent;
 
+        position: relative;
+
         transition: scale 1s ease-out,
             border-color 1.5s ease-in-out,
             height 0.5s ease-in-out;
-        
         
         &.swiper-slide-next {
             scale: 1;
             border-color: white;
             box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
         }
+        
+    }
+    
+    &__image {
+        width: 192 / 340 * 100%;
+    }
+
+    &__summary {
+        color: #FD9B40;
+
+        /* Скрыть маркер details (треугольник) */
+        list-style: none;
+        list-style-image: none;
+    }
+
+    &__details[open] {
+        min-height: 100%;
+        width: 100%;
+
+        position: absolute;
+        left: 0;
+
+        background: $button-background-color;
+        padding: 10px;
+
+        animation: sweep .5s ease-in-out both;
+    }
+
+    &__text {
+        font-size: inherit;
     }
 }

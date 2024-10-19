@@ -1,0 +1,48 @@
+.quotes {
+    @include section-position;
+
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(25px, 100 / 1080 * 100dvh, 100px);
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(20px, 50 / 1080 * 100dvh, 50px);
+    }
+
+    &__link {
+        font-size: adaptive-font-size($font-size-medium, $font-size-medium-mobile);
+        line-height: adaptive-font-size($font-size-medium, $font-size-medium-mobile);
+
+        &::after {
+            content: "Нажмите тут";
+            display: block;
+            opacity: 0.5;
+            margin-top: clamp(20px, 40 / 1080 * 100dvh, 40px);
+        }
+    }
+
+    &__frame {
+        padding: min(110px, 110 / 720 * 100%) min(120px, 120 / 1315 * 100%);
+        background: $button-background-color;
+        text-align: left;
+    }
+
+    &__frame-item:not(:last-of-type) {
+        margin-bottom: 12%;
+    }
+
+    &__background {
+        background: url('../img/quotes_2.svg') left 130% / contain no-repeat,
+            url('../img/quotes_1.svg') left bottom / contain no-repeat,
+            url('../img/quotes_3.svg') right bottom / contain no-repeat,
+            linear-gradient(180deg, #293145 0%, #222837 100%);
+    }
+}
