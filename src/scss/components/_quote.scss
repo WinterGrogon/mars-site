@@ -3,7 +3,11 @@
     flex-direction: column;
     gap: clamp(20px, 50 / 1080 * 100dvh, 50px);
 
-    &:nth-child(2n) &__text {
+    &__text {
+        font-size: adaptive-font-size($font-size-main, $font-size-main-mobile);
+    }
+
+    &:lang(en) &__text {
         color: #FFDEB7;
     }
 

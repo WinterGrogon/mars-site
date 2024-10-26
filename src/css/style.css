@@ -578,12 +578,95 @@ p, a, label, input, input::placeholder, button {
           flex-direction: column;
   gap: clamp(20px, 4.6296296296dvh, 50px);
 }
-.quote:nth-child(2n) .quote__text {
+.quote__text {
+  font-size: calc(0.78rem + 6.6 * (100dvw - 280px) / (1920 - 280));
+}
+.quote:lang(en) .quote__text {
   color: #FFDEB7;
 }
 .quote__author {
   text-align: right;
   color: #FD9B40;
+}
+
+.form__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #222735;
+  text-align: center;
+  aspect-ratio: 1315/183;
+  font-size: calc(0.9rem + 33 * (100dvw - 280px) / (1920 - 280));
+}
+.form__header-text {
+  font-size: calc(0.9rem + 33 * (100dvw - 280px) / (1920 - 280));
+}
+.form__body {
+  background-color: #3E4761;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: min(160px, 13.201320132dvh);
+  padding: 11.6504854369% 11.7870722433%;
+}
+.form__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+.form__field {
+  background-color: #2b344b;
+  width: 100%;
+  border: 2px solid transparent;
+  -webkit-box-shadow: 0 3px 2px #222735;
+          box-shadow: 0 3px 2px #222735;
+}
+.form__field:focus {
+  border-color: #FFB762;
+}
+.form__checkbox {
+  width: 4.5627376426%;
+  aspect-ratio: 1;
+  border: none;
+}
+.form__btn {
+  background-color: #2b344b;
+  padding: 0 13%;
+  aspect-ratio: 526/115;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
+}
+.form__btn:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+.form__btn:active {
+  -webkit-filter: hue-rotate(15deg);
+          filter: hue-rotate(15deg);
 }
 
 .header {
@@ -1065,6 +1148,14 @@ p, a, label, input, input::placeholder, button {
   background: -webkit-gradient(linear, left top, left bottom, from(#222836), to(#293146));
   background: linear-gradient(180deg, #222836 0%, #293146 100%);
 }
+@media screen and (orientation: portrait) {
+  .professions {
+    min-height: auto;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
 .professions .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1162,6 +1253,7 @@ p, a, label, input, input::placeholder, button {
   /* Скрыть маркер details (треугольник) */
   list-style: none;
   list-style-image: none;
+  font-size: calc(0.78rem + 6.6 * (100dvw - 280px) / (1920 - 280));
 }
 .professions__details[open] {
   min-height: 100%;
@@ -1172,9 +1264,10 @@ p, a, label, input, input::placeholder, button {
   padding: 10px;
   -webkit-animation: sweep 0.5s ease-in-out both;
           animation: sweep 0.5s ease-in-out both;
+  font-size: calc(0.78rem + 6.6 * (100dvw - 280px) / (1920 - 280));
 }
 .professions__text {
-  font-size: inherit;
+  font-size: calc(0.78rem + 6.6 * (100dvw - 280px) / (1920 - 280));
 }
 
 .quotes {
@@ -1237,4 +1330,8 @@ p, a, label, input, input::placeholder, button {
 .quotes__background {
   background: url("../img/quotes_2.svg") left 130%/contain no-repeat, url("../img/quotes_1.svg") left bottom/contain no-repeat, url("../img/quotes_3.svg") right bottom/contain no-repeat, -webkit-gradient(linear, left top, left bottom, from(#293145), to(#222837));
   background: url("../img/quotes_2.svg") left 130%/contain no-repeat, url("../img/quotes_1.svg") left bottom/contain no-repeat, url("../img/quotes_3.svg") right bottom/contain no-repeat, linear-gradient(180deg, #293145 0%, #222837 100%);
+}
+
+.request {
+  background-color: #FFB762;
 }

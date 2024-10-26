@@ -3,6 +3,11 @@
     min-height: 100dvh;
     background: linear-gradient(180deg, #222836 0%, #293146 100%);
 
+    @media screen and (orientation: portrait) {
+        min-height: auto;
+        height: fit-content;
+    }
+
     .container {
         display: flex;
         flex-direction: column;
@@ -84,6 +89,7 @@
         /* Скрыть маркер details (треугольник) */
         list-style: none;
         list-style-image: none;
+        font-size: adaptive-font-size($font-size-main, $font-size-main-mobile);
     }
 
     &__details[open] {
@@ -97,9 +103,11 @@
         padding: 10px;
 
         animation: sweep .5s ease-in-out both;
+        font-size: adaptive-font-size($font-size-main, $font-size-main-mobile);
     }
 
     &__text {
-        font-size: inherit;
+        // font-size: inherit;
+        font-size: adaptive-font-size($font-size-main, $font-size-main-mobile);
     }
 }
